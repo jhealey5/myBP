@@ -1,4 +1,3 @@
-
 // TYPOGRAPHY =================
 
 // Sets font size to rems and px fallback
@@ -45,30 +44,11 @@
 
 // BORDER-RADIUS =================
 
-// Sets a single radius for each corner
+// Sets a border-radius
 .radius(@radius) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius: @radius;
 	border-radius: @radius;
-}
-
-// Sets individual radii on each corner
-.border-radius(@topright, @bottomright, @bottomleft, @topleft) {
-	-webkit-border-top-right-radius: @topright;
-	-webkit-border-bottom-right-radius: @bottomright;
-	-webkit-border-bottom-left-radius: @bottomleft;
-	-webkit-border-top-left-radius: @topleft;
-	-moz-border-radius-topright: @topright;
-	-moz-border-radius-bottomright: @bottomright;
-	-moz-border-radius-bottomleft: @bottomleft;
-	-moz-border-radius-topleft: @topleft;
-	border-top-right-radius: @topright;
-	border-bottom-right-radius: @bottomright;
-	border-bottom-left-radius: @bottomleft;
-	border-top-left-radius: @topleft;
-	-webkit-background-clip: padding-box;
-	-moz-background-clip: padding;  
-	background-clip: padding-box;
 }
 
 
@@ -92,17 +72,18 @@
 }
 
 .rotation(@deg){
-  -webkit-transform: rotate(@deg);
-  -moz-transform: rotate(@deg);
-  transform: rotate(@deg);
+	-webkit-transform: rotate(@deg);
+	-moz-transform: rotate(@deg);
+	transform: rotate(@deg);
 }
 
 // OPACITY =================
 
-.opacity(@opacity) {
-  -moz-opacity: @opacity;
-  -khtml-opacity: @opacity;
-  -webkit-opacity: @opacity;
-  opacity: @opacity;
+.opacity(@opacity: 1) {
+	@ieOpacity: @opacity * 100;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{ieOpacity})";
+	filter: ~"alpha(opacity=@{ieOpacity})";
+	opacity: @opacity;
 }
+
 

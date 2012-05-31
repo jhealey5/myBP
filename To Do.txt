@@ -4,6 +4,5 @@ Check hovers & links
 IMG alts & titles & dimensions
 Run ImageOptim
 HTML & CSS Vailidity test
-csspie - behavior: url(path/to/PIE.htc); if required
 Cross browser test
 ySlow test

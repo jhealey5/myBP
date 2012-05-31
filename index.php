@@ -3,11 +3,9 @@
 <?php $page_title = "page title"; ?>
 <?php $page_description = "page description"; ?>
 
-<?php include('start.php') ?>
+<?php include('includes/start.php') ?>
 
-	<header>
-	
-	</header>
+<?php include('includes/header.php') ?>
 	
 	
 	<div role="main">
@@ -19,4 +17,4 @@
 	
 	</footer>
 
-<?php include('end.php') ?>
+<?php include('includes/end.php') ?>

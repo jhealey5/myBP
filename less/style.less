@@ -6,13 +6,31 @@ Version:
 Tags: 
 */
 
+
+/* =================== !CONTENTS ===================
+Resets & Base Styles
+	!Base Resets
+	!Form Resets
+	!Chrome Frame Prompt
+	!HTML5 Shiv
+	!Print Styles
+
+Site Styles
+	!Links
+	!Selection
+	!Typography
+	!Layout
+	!Float Clears
+	!IE Fixes...
+	!No JS Fixes...
+   ================================================= */
+
+
 @import "reset.less";
 @import "elements.less";
 
 
-
-
-/* =================== SITE STYLES =================== */
+/* =================== !SITE STYLES =================== */
 
 /* ==== !Links */
 a { color: #00e; }
@@ -55,3 +73,13 @@ p {
 }
 
 /* ==== !Layout */
+
+
+/* ==== !Float Clears */
+.clearfix:before, .clearfix:after { content: ""; display: table }
+.clearfix:after { clear: both }
+.clearfix { *zoom: 1 }
+
+/* ==== !IE Fixes... */
+
+/* ==== !No JS Fixes... */

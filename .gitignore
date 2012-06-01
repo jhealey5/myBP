@@ -117,6 +117,13 @@ Backup*/
 UpgradeLog*.XML
 
 
+#############
+## Sublime
+#############
+
+# SublimeText2 project files
+*.sublime-project
+*.sublime-workspace
 
 ############
 ## Windows
@@ -163,3 +170,4 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+

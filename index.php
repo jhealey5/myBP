@@ -8,13 +8,13 @@
 <?php include('includes/header.php') ?>
 	
 	
-	<div role="main">
+<div role="main">
+
+
+
+</div><!-- end main -->
 	
-	</div><!-- end main -->
 	
-	
-	<footer>
-	
-	</footer>
+<?php include('includes/footer.php') ?>
 
 <?php include('includes/end.php') ?>

@@ -58,7 +58,7 @@ myBP comes with some pretty nifty and useful mixins I found and I tend to use of
 ###Credits:
 Thanks to these guys I made myBP. Most of the things I use in myBP comes from the things these cool guys made, check them out, they might help your workflow.
 
-(http://html5boilerplate.com/) The HTML5 Boilerplate.
-(http://stuffandnonsense.co.uk/projects/320andup/) The 320andUp project.
-(http://meyerweb.com/eric/tools/css/reset/) Mr. Meyer's awesome reset.
-(https://github.com/Schepp/box-sizing-polyfill) Christian Schaefer's awesome box-sizing fix for IE6/7.
+* (http://html5boilerplate.com/) The HTML5 Boilerplate.
+* (http://stuffandnonsense.co.uk/projects/320andup/) The 320andUp project.
+* (http://meyerweb.com/eric/tools/css/reset/) Mr. Meyer's awesome reset.
+* (https://github.com/Schepp/box-sizing-polyfill) Christian Schaefer's awesome box-sizing fix for IE6/7.

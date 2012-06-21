@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 		
+		<!--[if lt IE 8]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script><![endif]-->
 		<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body class="<?php echo("$body_class"); ?>">

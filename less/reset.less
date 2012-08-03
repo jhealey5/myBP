@@ -3,7 +3,6 @@
 /* ==== !Base Resets */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; *behavior: url(scripts/boxsizing.htc); }
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, blockquote, sub, pre, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figcaption, figure, footer, header, hgroup, menu, nav, section, audio, video { margin: 0; padding: 0; font-size: 100%; font: inherit; vertical-align: baseline;  }
-ol, ul { list-style: none }
 blockquote, q { quotes: none }
 blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 a:hover, a:active { outline: 0 }
@@ -14,10 +13,10 @@ html, button, input, select, textarea { font-family: sans-serif; color: #222; }
 body { line-height: 1; }
 
 /* ==== !Form Resets */
-button, input, select, textarea { vertical-align: baseline; *vertical-align: middle; margin: 0; padding: 0; }
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+label, button, input, select, textarea, option { vertical-align: baseline; *vertical-align: middle; margin: 0; padding: 0; cursor: pointer;}
+button, input[type="button"], input[type="reset"], input[type="submit"] {-webkit-appearance: button; *overflow: visible; }
 button[disabled], input[disabled] { cursor: default }
-label { cursor: pointer }
+input[type="text"]:active, input[type="text"]:focus, textarea:active, textarea:focus{ cursor:text; }
 textarea { overflow: auto; vertical-align: top; resize: none; }
 
 /* ==== !Chrome Frame Prompt */

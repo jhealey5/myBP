@@ -1,4 +1,4 @@
-<header role="banner">
+<header role="banner" class="page-header">
 	<h1 class="logo"><a href="index.php">logo</a></h1>
 
 	<nav class="main-nav">

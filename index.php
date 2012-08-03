@@ -3,18 +3,18 @@
 <?php $page_title = "page title"; ?>
 <?php $page_description = "page description"; ?>
 
-<?php include('includes/start.php') ?>
+<?php include('includes/page-start.php') ?>
 
-<?php include('includes/header.php') ?>
+<?php include('includes/page-header.php') ?>
 	
 	
-<div role="main">
+<div role="page-content">
 
 
 
 </div><!-- end main -->
 	
 	
-<?php include('includes/footer.php') ?>
+<?php include('includes/page-footer.php') ?>
 
-<?php include('includes/end.php') ?>
+<?php include('includes/page-end.php') ?>

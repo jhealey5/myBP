@@ -24,7 +24,7 @@ My boilerplate/framework when starting new projects. myBP contains all the neces
 ###Folder Structure
 All HTML/PHP pages go in the root along with your main stylesheet. style.css is the main(and only) stylesheet, that contains media queries and your IE/no-js fixes. It's all contained in one to reduce HTTP requests.
 
-####images folder
+####Images
 Pretty obvious really, put all your images here. I find that using a naming convention for images really helps when you're looking through this folder. Here's how I prepend my image files:
 * Icons: `icon-`
 * Images: `img-`

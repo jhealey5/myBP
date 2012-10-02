@@ -8,7 +8,7 @@
 <?php include('includes/page-header.php') ?>
 	
 	
-<div role="page-content">
+<div role="main" class="page-content">
 
 
 

@@ -9,8 +9,8 @@
 	<title><?php echo("$page_title"); ?></title>
 	<meta name="description" content="<?php echo("$page_description"); ?>">
 
-	<meta name="viewport" content="width=device-width">
-
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 		

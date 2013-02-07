@@ -12,12 +12,12 @@ My boilerplate/framework when starting new projects. myBP contains all the neces
 ###Features:
 * HTML5 Ready
 * Convenient CSS3 Mixins
-* Simple, Modular CSS & PHP Includes
+* Super Easy OOCSS Responsive Grid
+* Simple, Modular LESS structure
 * jQuery CDN & Local Fallback
-* Customised Eric Meyer's Reset
+* Custom Reset/Normalize
 * Chrome Frame Support  & Conditional IE/no-js Comments
-* Box-sizing support for IE6/7
-* Basic Print Styles
+* Old Browser Support (read: fixes)
 
 ##How to use myBP
 
@@ -31,34 +31,34 @@ Pretty obvious really, put all your images here. I find that using a naming conv
 * Backgrounds: `bg-`
 * Logos: `logo-`
 
-####Scripts
-All scripts should be placed in here. There's a lib folder inside to place any script libraries such as jQuery, prototype, etc. The plugins.js should be where you place all plugin code, again all in one file to reduce the amount of HTTP requests. scripts.js is where you put your site's js code. box-sizing.htc is the box-sizing fix for older versions of IE.
+####js
+All scripts should be placed in here. There's a lib folder inside to place any script libraries such as jQuery, prototype, etc. The plugins.js should be where you place all plugin code, again all in one file to reduce the amount of HTTP requests. scripts.js is where you put your site's js code.
 
 ####Includes
-The includes folder is where your modules are kept, such as header, footer, etc. The start.php file contains everything above, and including, the opening `body` tag. The end.php contains the scripts to be loaded just before the closing `body` tag and closes the html document. Within the start.php are relevant variables which are assigned on the sites pages to fill in meta descriptions/titles and add classes to the body tag.
+The includes folder is where your header and footer are kept. The page-start.php file contains everything above the page content, including navigation and the opening `body` tag. The page-end.php contains the footer and scripts to be loaded just before the closing `body` tag. It doesn't close the body in case you want to load scripts specific to the page. Within the page-start.php are relevant variables which are assigned on the sites pages to fill in meta descriptions/titles and add classes to the body tag.
 
 ####Less
-This is the Less folder where all less files are contained. This shouldn't be uploaded, well it doesn't add to the site, really and is used as a local folder. The main style.less is where you'll be creating your css, you should set this to compile(locallly, don't compile client or server side!) a style.css to the root. style.less pulls in the reset from reset.less(duh..) and any mixins you may use from elements.less.
+This is the Less folder where all less files are contained. This should be compiled locally and only publish the output (style.css) to the live site. The main style.less is where the majority of your CSS is, for layouts, objects, etc. It pulls in a number of LESS files, for variables, type, reset, mixins, etc. Keeping things in seperate .less files keeps it modular and easy to use. Media Queries are changed in variables.less and set with `@media @desktop {}`, etc.
 
 ####Misc files
-You'll also find a To Do.txt and a humans.txt file. The former is just a text file for you put reminders in of things to do, a checklist, comes with some I find I need reminding of. The latter is explained here (http://humanstxt.org/).
+You'll also find a To Do.txt and a humans.txt file. The former is just a text file for you put reminders in of things to do, a checklist, comes with some I find I need reminding of. The latter is explained here (http://humanstxt.org/) and is pointed to in the author meta. If your  site is playing up, uncomment the debug.less file, it might help.
 
 ###Less Mixins
-myBP comes with some pretty nifty and useful mixins I found and I tend to use often. There's a load I don't tend to use which are in other boilerplates so you could add your own to the element.less file. Here's a brief overview of the ones included:
+myBP comes with some pretty nifty and useful mixins I found and I tend to use often. There's a load I don't tend to use which are in other boilerplates so you could add your own to the mixins.less file. Here's a brief overview of the ones included:
 * `.font-size(16)` - Sets a font-size in rems and a px fallback for older browsers. 
-* `.h-gradient(blue, red)` - Sets a horizontal gradient with start colour and end colour parameters. Contains browser prefixes & fallbacks.
-* `.v-gradient(blue, red)` - As above but for vertical gradients.
-* `.border-radius(5px)` - Sets the border radius. Use more than one parameter for different corners (`.border-radius(5px 0 5px 0)`). Contains browser prefixes.
-* `.box-shadow(1px 1px 0 #000)` - Sets box-shadow. Contains browser prefixes.
-* `.transition(rotate(90deg))` - Sets transitions, not limited to rotations. Contains browser prefixes.
-* `.rotate(45deg)` - Sets a rotate transition, similar to above but easier. Contains browser prefixes.
-* `.opacity(0.5)` - Sets opacity. Contains IE filter.
-* `.clear()` - The awesome one. Apply to any element you want cleared instead of applying a "clearfix" class to the html tag. Uses the micro clearfix method.
+* `.grad-h(blue, red)` - Sets a horizontal gradient with start colour and end colour parameters.
+* `.grad-v(blue, red)` - As above but for vertical gradients.
+* `.transition(rotate(90deg))` - Sets transitions, not limited to rotations.
+* `.rotate(45deg)` - Sets a rotate transition, similar to above but easier.
+* `.cf` - Clear floats, not a mixin now in case you want to add the class to html instead, but it extends as well.
 
 ###Credits:
 Thanks to these guys I made myBP. Most of the things I use in myBP comes from the things these cool guys made, check them out, they might help your workflow.
 
-* (http://html5boilerplate.com/) The HTML5 Boilerplate.
-* (http://stuffandnonsense.co.uk/projects/320andup/) The 320andUp project.
-* (http://meyerweb.com/eric/tools/css/reset/) Mr. Meyer's awesome reset.
-* (https://github.com/Schepp/box-sizing-polyfill) Christian Schaefer's awesome box-sizing fix for IE6/7.
+* HTML5BP Project (http://html5boilerplate.com/)
+* 320andUp Project (http://stuffandnonsense.co.uk/projects/320andup/)
+* Meyer's Reset (http://meyerweb.com/eric/tools/css/reset/)
+* Normalize.css (https://github.com/necolas/normalize.css)
+* Inuit.css (http://csswizardry.com)
+* Clear Less (https://github.com/clearleft/clearless)
+* CSS-Tricks Grids (http://css-tricks.com/dont-overthink-it-grids/)

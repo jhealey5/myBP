@@ -3,8 +3,8 @@
 
 
 /* TEAM */
-	Site: http://asone.co.uk
-	Twitter: @asone
+	Site: 
+	Twitter: 
 
 /* THANKS */
 	HTML5BP Project (http://html5boilerplate.com/)
@@ -13,5 +13,4 @@
 	Normalize.css (https://github.com/necolas/normalize.css)
 	Inuit.css (http://csswizardry.com)
 	Clear Less (https://github.com/clearleft/clearless)
-
-
+	CSS-Tricks Grids (http://css-tricks.com/dont-overthink-it-grids/)

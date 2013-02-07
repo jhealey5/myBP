@@ -3,16 +3,15 @@
 
 
 /* TEAM */
-	Site:
-	Design & Build:
-	Twitter:
-	Location: 
+	Site: http://asone.co.uk
+	Twitter: @asone
 
 /* THANKS */
-	Names (& URL):	HTML5BP Project (http://html5boilerplate.com/), 
-  					320andUp Project (http://stuffandnonsense.co.uk/projects/320andup/), Meyer's Reset(http://meyerweb.com/eric/tools/css/reset/)
+	HTML5BP Project (http://html5boilerplate.com/)
+	320andUp Project (http://stuffandnonsense.co.uk/projects/320andup/)
+	Meyer's Reset (http://meyerweb.com/eric/tools/css/reset/)
+	Normalize.css (https://github.com/necolas/normalize.css)
+	Inuit.css (http://csswizardry.com)
+	Clear Less (https://github.com/clearleft/clearless)
 
-/* SITE */
-	Standards: HTML5, CSS3
-	Components: jQuery, LESS
-	Software: Fireworks, Coda
+

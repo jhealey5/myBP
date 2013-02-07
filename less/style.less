@@ -1,83 +1,42 @@
 /*
 Theme Name: 
 Description: 
-Author: 
-Version: 
-Tags: 
 */
 
 
-/* =================== !CONTENTS ===================
-Resets & Base Styles
-	!Base Resets
-	!Form Resets
-	!Chrome Frame Prompt
-	!HTML5 Shiv
-	!Print Styles
+/* ================================= !CONTENTS
 
-Site Styles
-	!Colours, Variables & Mixins 
-	!Links
-	!Selection
-	!Typography
-	!Layout
-	!IE Fixes...
-	!No JS Fixes...
-   ================================================= */
+	!RESETS 	(Print Styles, Normalize, Chrome Prompt, etc.)
+	!UTILITY 	(Clearfix, Image Replacement, Base Buttons, etc.)
+	!GRID 		(Wrapper, Columns, Layout Media Queries, etc.)
+	!TYPE 		(Links, Selection, Headings, Body, etc.)
+
+	!HEADER
+	!NAVIGATION
+	!FOOTER
+	!OBJECTS
+	!FIXES
+
+=========================================== */
 
 
-@import "reset.less";
-@import "elements.less";
+@import "variables";
+@import "reset";
+@import "utility";
+@import "mixins";
+@import "grid";
+@import "typography";
 
 
-/* =================== !SITE STYLES =================== */
+/* ================================ !HEADER */
 
-/* ==== !Colours & Variables */
-
-
-/* ==== !Links */
-a { color: #00e }
-a:visited { color: #551a8b }
-a:active { position: relative; top: 1px }
-a:hover { color: #06e }
-a:focus { outline: thin dotted }
-
-/* ==== !Selection */
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none }
-::selection { background: #fe57a1; color: #fff; text-shadow: none }
-
-/* ==== !Typography */
-body {
-
-}
-h1, h2, h3, h4, h5, h6 {
-
-}
-h1 {
-
-}
-h2 {
-
-}
-h3 {
-
-}
-h4 {
-
-}
-h5 {
-
-}
-h6 {
-
-}
-p {
-
-}
-
-/* ==== !Layout */
+/* ================================ !NAVIGATION */
 
 
-/* ==== !IE Fixes... */
+/* ================================ !FOOTER */
 
-/* ==== !No JS Fixes... */
+
+/* ================================ !OBJECTS */
+
+
+/* ================================ !FIXES */

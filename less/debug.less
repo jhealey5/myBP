@@ -1,0 +1,111 @@
+// ================================ !DEBUG */
+/*
+    Enable this stylesheet to visually detect any improperly nested or
+    potentially invalid markup, or any potentially inaccessible code.
+    
+    Red          ==      definite error
+    Yellow       ==      double-check
+    None         ==      should be fine
+    
+    Please note that this method of checking markup quality should not be relied
+    upon entirely. Validate your markup!
+ */
+
+.warn {
+    outline: 5px solid yellow;
+}
+.alert {
+    outline: 5px solid red;
+}
+
+/* Are there any empty elements in your page? */
+:empty {
+    @extend .warn;
+}
+
+
+/*
+    Images require alt attributes, empty alts are fine but should be
+    double-checked, no alt is bad and is flagged red.
+ */
+img {
+    @extend .alert;
+}
+img[alt] {
+    outline: none;
+}
+img[alt=""] {
+    @extend .warn;
+}
+
+
+/* Double-check any links whose href is something questionable. */
+a[href="#"],
+a[href*="javascript"] {
+    @extend .warn;
+}
+
+
+/* Ensure any lists only contain li as children. */
+ul,
+ol {
+    > *:not(li) {
+        @extend .alert;
+    }
+}
+
+
+/* tr as children of table ain’t great, did you need a thead/tbody? */
+table > tr {
+    @extend .warn;
+}
+
+
+/* tfoot needs to come _before_ tbody. */
+tbody + tfoot {
+    @extend .warn;
+}
+
+
+/* Forms require "action" attributes. */
+form {
+    @extend .alert;
+}
+form[action]{
+    outline: none;
+}
+
+
+/*
+    Various form-field types have required attributes. inputs need "type"
+    attributes, textareas need "rows" and "cols" attributes and submit buttons
+    need a "value" attribute.
+ */
+textarea,
+input {
+    @extend .alert;
+}
+input[type] {
+    outline: none;
+}
+textarea[rows][cols] {
+    outline: none;
+}
+input[type=submit] {
+    @extend .alert;
+}
+input[type=submit][value] {
+    outline: none;
+}
+
+
+/* Avoid inline styles where possible. */
+[style] {
+	@extend .warn;
+}
+
+
+/* You should avoid using IDs for CSS, is this doing any styling? */
+[id] {
+	@extend .warn;
+}

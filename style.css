@@ -230,7 +230,7 @@ summary {
 }
 /* ================================= !GRID */
 .grid {
-  max-width: 1000px;
+  max-width: 1020px;
   margin: 0 auto;
   *zoom: 1;
   padding: 0 20px;
@@ -245,13 +245,10 @@ summary {
 }
 [class*='desk-'] {
   float: left;
-  padding-right: 20px;
+  padding: 0 10px;
   -webkit-transition: width 0.3s ease;
   -moz-transition: width 0.3s ease;
   transition: width 0.3s ease;
-}
-.grid [class*='desk-']:last-of-type {
-  padding-right: 0;
 }
 .push-r {
   float: right;

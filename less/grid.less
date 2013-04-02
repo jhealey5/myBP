@@ -1,17 +1,14 @@
 /* ================================= !GRID */
 
 .grid {
-  max-width: @width;
+  max-width: @width + @space;
   margin: 0 auto;
   .cf;
   padding: 0 @space;
 }
 [class*='desk-'] {
 	float: left;
-	padding-right: @space;
-	.grid &:last-of-type {
-		padding-right: 0;
-	}
+	padding: 0 @space/2;
 	.transition(width .3s ease);
 }
 

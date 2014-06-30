@@ -6,3 +6,4 @@ Run ImageOptim
 HTML & CSS Vailidity test
 Cross browser test
 ySlow test
+test

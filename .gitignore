@@ -162,6 +162,7 @@ pip-log.txt
 .coverage
 .tox
 .fpp
+.test3
 
 #Translations
 *.mo

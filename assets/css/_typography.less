@@ -1,0 +1,93 @@
+/* ================================ !TYPE & SELECTION */
+
+a { 
+	color: @brand;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: lighten(@brand, 10%);
+	}
+}
+
+::-moz-selection { background: @brand; color: #fff; text-shadow: none }
+::selection { background: @brand; color: #fff; text-shadow: none }
+
+
+.b,
+body {
+	font-family: @body;
+}
+body {
+	color: @base;
+}
+
+.h,
+h1, h2, h3, h4, h5, h6 {
+	font-family: @headings;
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+	margin-bottom: @spacer;
+}
+
+h1,
+.h1 {
+
+}
+h2,
+.h2 {
+
+}
+h3,
+.h3 {
+
+}
+h4,
+.h4 {
+
+}
+
+p {
+	line-height: 1.6;
+	margin-bottom: @spacer;
+}
+
+article {
+	blockquote {
+		font-style: italic;
+		padding: @spacer;
+		background: #eee;
+		margin-bottom: @spacer;
+
+		> p {
+			margin-bottom: 0;
+		}
+	}
+
+	ul,
+	ol {
+		padding-left: @spacer;
+		margin: @spacer 0;
+		list-style-position: outside;
+		list-style-type: disc;
+	}
+		
+	li {
+		margin: @spacer/2 0;
+	}
+}
+
+.wp-caption {
+    max-width: 100% !important;
+    margin-bottom: @spacer;
+
+    > a {
+        display: block;
+    }
+}
+.wp-caption-text {
+    text-align: center;
+    font-size: 80%;
+    margin: .5em 0;
+}

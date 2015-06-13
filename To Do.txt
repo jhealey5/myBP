@@ -1,9 +1,0 @@
-404 page
-Favicon 16x16
-Check hovers & links
-IMG alts & titles & dimensions
-Run ImageOptim
-HTML & CSS Vailidity test
-Cross browser test
-ySlow test
-test2
